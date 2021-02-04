@@ -33,6 +33,8 @@ COPY default.ini /default.ini
 
 COPY start.py /start.py
 
+RUN chmod a+x /start.py
+
 EXPOSE 80/tcp
 VOLUME ["/data"]
 
